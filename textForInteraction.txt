@@ -1,0 +1,15 @@
+Welcome to the Cellular Mitosis Simulator! 
+
+Preprophase:
+
+Prophase:
+
+Prometaphase:
+
+Metaphase:
+
+Anaphase:
+
+Telophase:
+
+Cytokenesis:
