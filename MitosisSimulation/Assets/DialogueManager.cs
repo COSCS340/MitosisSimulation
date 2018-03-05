@@ -15,7 +15,8 @@ public class DialogueManager : MonoBehaviour {
     private Queue<string> sentences;
     private List<string> sentences2; //#######################
 
-    public GameObject backButton;
+    public GameObject backButton; //backButton gameojbect
+    public ScriptManager myScriptManager;
 
 	// Use this for initialization
 	void Start () {
@@ -73,6 +74,7 @@ public class DialogueManager : MonoBehaviour {
         //Displays sentence char by char
         StopAllCoroutines(); //makes sure we don't animate muitple sentences
         StartCoroutine(TypeSentence(sentence));
+        myScriptManager.InvokeFunction(index);
     }
 
     public void DisplayPreviousSentence()
