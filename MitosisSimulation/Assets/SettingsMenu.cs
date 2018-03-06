@@ -9,8 +9,12 @@ public class SettingsMenu : MonoBehaviour {
     public AudioMixer audioMixer;
 
     public Dropdown resolutionDropdown;
+    public Dropdown qualitySettingsDropdown;
 
     Resolution[] resoltions;
+
+    //QualitySettings
+    public string[] qualities;
 
     void Start()
     {
@@ -38,6 +42,16 @@ public class SettingsMenu : MonoBehaviour {
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex; //Set Screen to the correct Default
         resolutionDropdown.RefreshShownValue();
+
+        //Quality Settings
+        List<string> options2 = new List<string>();
+        qualities = QualitySettings.names;
+        options2 = new List<string>(qualities);
+        qualitySettingsDropdown.ClearOptions();
+        
+        qualitySettingsDropdown.AddOptions(options2);
+        qualitySettingsDropdown.value = QualitySettings.GetQualityLevel();
+        qualitySettingsDropdown.RefreshShownValue();
     }
 
     public void SetResolution(int resolutionIndex)
@@ -48,7 +62,6 @@ public class SettingsMenu : MonoBehaviour {
 
     public void SetVolume (float volume)
     {
-        //Debug.Log(volume);
         audioMixer.SetFloat("volume", volume);
     }
 
