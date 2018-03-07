@@ -4,8 +4,21 @@ timeCreated: 1520206933
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
-  fileIDToRecycleName: {}
-  externalObjects: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material_002__path3340_png
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Sphere
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_002__path3340_png
+    second: {fileID: 2100000, guid: e54d299358a2148d5a024f7bf1509d62, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
