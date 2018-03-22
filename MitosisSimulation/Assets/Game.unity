@@ -39,7 +39,11 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.436329, g: 0.47471124, b: 0.51471156, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+>>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
 =======
   m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 >>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
@@ -2665,7 +2669,11 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -500}
+=======
+  m_AnchoredPosition: {x: -1222, y: 138.9}
+>>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
 =======
   m_AnchoredPosition: {x: -1222, y: 138.9}
 >>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
@@ -2886,6 +2894,7 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 746c3b85efe204f90b30014eadf93f89, type: 2}
   m_IsPrefabParent: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2028406112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +2909,8 @@ GameObject:
   m_Layer: 0
   m_Name: Cell
 =======
+=======
+>>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
 --- !u!1 &2008959587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,12 +2921,16 @@ GameObject:
   - component: {fileID: 2008959588}
   m_Layer: 0
   m_Name: Missing Prefab
+<<<<<<< HEAD
+>>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
+=======
 >>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!23 &2028406113
 MeshRenderer:
@@ -2983,6 +2998,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
 =======
+=======
+>>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
 --- !u!4 &2008959588
 Transform:
   m_ObjectHideFlags: 0
@@ -2995,6 +3012,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+<<<<<<< HEAD
+>>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
+=======
 >>>>>>> 46078bcf119dbaab510aaa4a6866da5aab0f5773
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059912229
