@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 77.6}
-  m_SizeDelta: {x: 613.7, y: 155.2}
+  m_AnchoredPosition: {x: 0, y: 12.7}
+  m_SizeDelta: {x: 698.5, y: 303.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &70224432
 GameObject:
@@ -640,9 +640,37 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - First we have a cell.
-    - Next the cell does some stuff.
-    - Then it does some more cool stuff......
+    - Welcome to the Cellular Mitosis Interactive Simulator!
+    - Cell division was first discovered by Hugo von Mohl in 1835, as he worked with
+      the green algae named Cladaphora glomerata.
+    - The process of cell division begins with Interphase. This mitotic phase is relatively
+      short compared to the length of interphase. When the cell is in interphase,
+      the cell grows by producing proteins and cytoplasmic organelles.
+    - The next step in the cell cycle is prophase. The cell prepares to divide by
+      tightly condensing its chromosomes, as well as starting mitotic spindle formation.
+      In this stage, the chromosomes are long, thin, and thread-like.
+    - At the beginning of prometaphase, the nuclear envelope, containing all the chromosomes
+      dissolves. Then, the kinetochore microtubules attach themselves to the chromosomal
+      kinetochores. A mitotic spindle is formed by the polar microtubules of one centrosome
+      interacting with the opposite polar microtubules of the other centrosome.
+    - "Now the cell has entered metaphase. The two centrosomes begin to pull the chromosomes
+      towards opposite ends of the cell. To ensure an equal distribution of chromosomes,
+      the \u201Cmetaphase checkpoint,\u201D an internal cell function, guarantees
+      that kinetochores are properly attached to the mitotic spindle and the chromosomes
+      are aligned. If the cell passes the metaphase checkpoint, then the cell proceeds
+      into anaphase."
+    - During anaphase, the bonds between chromatids are severed, forming two identical
+      chromosomes. The kinetochores are shortened, pulling the chromosomes to opposite
+      ends of the cell. The second part of anaphase, known as anaphase B, causes the
+      cell to elongate, as it prepares to divide in half.
+    - Telophase is the second to last step and can be seen as an inverse of prophase
+      and prometaphase. The microtubules lengthen and cause the cell to elongate more.
+      The old nuclear envelope has broken down, and a new nuclear envelope forms around
+      each pair of chromosomes. Once surrounded by the new nuclear envelope, the chromosomes
+      decondense and become thread-like once again.
+    - "Cytokinesis is technically not a part of cellular mitosis and is a separate
+      process entirely. During cytokinesis, the cell \u201Cpinches\u201D the middle
+      and breaks off into two new cells."
 --- !u!1 &148763325
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +827,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_enableKerning: 1
@@ -1553,11 +1581,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1792,7 +1820,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4453367979935100, guid: 746c3b85efe204f90b30014eadf93f89, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1949724302074012, guid: 746c3b85efe204f90b30014eadf93f89, type: 2}
       propertyPath: m_Name
@@ -2568,7 +2596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -57.73}
+  m_AnchoredPosition: {x: -1222, y: 138.9}
   m_SizeDelta: {x: 768, y: 356.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781977496
@@ -2780,11 +2808,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4453367979935100, guid: 746c3b85efe204f90b30014eadf93f89, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 746c3b85efe204f90b30014eadf93f89, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2008959587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1000506112}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2008959588}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2008959588
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1000506112}
+  m_GameObject: {fileID: 2008959587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059912229
 GameObject:
   m_ObjectHideFlags: 0
