@@ -12,8 +12,8 @@ public class DialogueManager : MonoBehaviour {
 
     public Animator animator;
 
-    private Queue<string> sentences;
-    private List<string> sentences2; //#######################
+    //private Queue<string> sentences;
+    private List<string> sentences2;
 
     public GameObject backButton; //backButton gameojbect
     public ScriptManager myScriptManager;
@@ -22,8 +22,8 @@ public class DialogueManager : MonoBehaviour {
 	void Start () {
         index = -1;
         backButton.SetActive(false);
-        sentences = new Queue<string>();
-        sentences2 = new List<string>(); //#######################
+        //sentences = new Queue<string>();
+        sentences2 = new List<string>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -34,13 +34,13 @@ public class DialogueManager : MonoBehaviour {
         //Extra and unused
         extra.text = dialogue.name;
 
-        sentences.Clear();
-        sentences2.Clear(); //#######################
+        //sentences.Clear();
+        sentences2.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
-            sentences2.Add(sentence); //#######################
+            //sentences.Enqueue(sentence);
+            sentences2.Add(sentence);
         }
 
         DisplayNextSentence();
@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour {
 
         //string sentence = sentences.Dequeue();
         index += 1;
-        string sentence = sentences2[index]; //#######################
+        string sentence = sentences2[index];
 
         //Debug.Log(sentence);
 
@@ -80,7 +80,7 @@ public class DialogueManager : MonoBehaviour {
     public void DisplayPreviousSentence()
     {
         index -= 1;
-        string sentence = sentences2[index]; //#######################
+        string sentence = sentences2[index];
         
         //Displays sentence char by char
         StopAllCoroutines(); //makes sure we don't animate muitple sentences
