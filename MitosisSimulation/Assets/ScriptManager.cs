@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ScriptManager : MonoBehaviour {
 
+	public GameObject nucleolus;
+	public GameObject centreole1;
+	public GameObject centreole2;
+	public GameObject[] spindles;
+
     public void InvokeFunction(int index)
     {
        switch (index)
