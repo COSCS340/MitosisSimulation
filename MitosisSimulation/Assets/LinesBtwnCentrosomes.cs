@@ -9,7 +9,7 @@ public class LinesBtwnCentrosomes : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		line = gameObject.GetComponent<LineRenderer>();
-		line.positionCount = 6; 
+		line.positionCount = verts.Length; 
 		line.numCornerVertices = 20;
 		line.startWidth = 0.05f;
 		line.endWidth = 0.05f;
