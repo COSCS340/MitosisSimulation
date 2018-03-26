@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScriptManager : MonoBehaviour {
 
@@ -17,6 +18,15 @@ public class ScriptManager : MonoBehaviour {
 	public GameObject[] chromopoints;
 	public GameObject[] daughterchromosomes;
 	public GameObject cell;
+
+    public void Update()
+    {
+        //Checking to see if the user wants to exit to the main menu
+        if (Input.GetKey(KeyCode.Escape) && Input.GetKeyDown(KeyCode.Y))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+    }
 
     public void InvokeFunction(int index)
     {
