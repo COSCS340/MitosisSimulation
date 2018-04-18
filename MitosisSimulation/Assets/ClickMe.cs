@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ClickMe : MonoBehaviour {
+
+    public Dialogue dialogue;
+    public GameObject box;
 	
 	// Update is called once per frame
 	void Update () {
@@ -17,6 +20,20 @@ public class ClickMe : MonoBehaviour {
                 //PrintName(hit.transform.gameObject);
                 if (i == hits.Length - 1) {
                     print(hit.transform.gameObject.tag);
+                    //#################################################################################
+                    dialogue = new Dialogue();
+                    dialogue.name = "TEST";
+                    string[] line = new string[1];
+                    line[0] = "This may work";
+                    dialogue.sentences = line;
+
+
+                    box = GameObject.Find("TextPopUp"); //does not work for inactive objects
+                    box.SetActive(true);
+
+
+                    FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                    //#################################################################################
                 }
             }
                 /*RaycastHit hit;
