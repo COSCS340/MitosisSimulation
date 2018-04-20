@@ -1,0 +1,35 @@
+Interphase
+Nucleolus:
+Within the nucleolus, chromosomes are being replicated as the cell prepared for cellular division. This particular process within 
+the cell is highly regulated by cyclins, cylin-dependent kinases, and other cell cycle proteins.
+
+Prophase
+Miotic Spindle:
+Close to the nucleus are structures called centrosomes, consisting of a pair of centrioles surrounded by a loose collection of proteins.
+The centrosome is the coordinating center for the cell's microtubules. A cell inherits a single centrosome at cell division, which is 
+duplicated by the cell before a new round of mitosis begins, giving a pair of centrosomes. 
+Nucleolus:
+During interphase, the material inside the nucleolus is loosely packed chromatin. When prophase starts, the chromatin condenses into 
+solid chromosomes.
+Chromosomes:
+Each chromosome has two chromatids, which are joined together at the centromere. 
+
+Prometaphase
+Miotic Spindle:
+Microtubules invade the nuclear space. This is called open mitosis.
+Chromosomes:
+In late prometaphase, kinetochore microtubules begin to search for and attach to chromosomal kinetochores.
+Metaphase
+Chromosomes:
+The resulting tension causes the chromosomes to align along the metaphase plateor equatorial plane, an imaginary line that is centrally 
+located between the two centrosomes (at approximately the midline of the cell).
+
+Anaphase
+Chromosomes:
+In late anaphase, chromosomes also reach their overall maximal condensation level, to help chromosome segregation and the re-formation
+of the nucleus.
+
+Telophase
+Chromosomes:
+Both sets of chromosomes, now surrounded by new nuclear membrane, begin to "relax" or decondense. 
+
