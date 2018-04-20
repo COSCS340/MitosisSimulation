@@ -6,6 +6,7 @@ public class ClickMe : MonoBehaviour {
 
     public Dialogue dialogue;
     public GameObject box;
+    public GameObject canvas;
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,8 +29,12 @@ public class ClickMe : MonoBehaviour {
                     dialogue.sentences = line;
 
 
-                    box = GameObject.Find("TextPopUp"); //does not work for inactive objects
+                    //box = GameObject.Find("TextPopUp"); //does not work for inactive objects
                     box.SetActive(true);
+                    canvas.transform.position = hit.transform.position;
+                    box.transform.position = hit.transform.position;
+                    //box.transform.position = Vector3.MoveTowards(box.transform.position, hit.transform.position, 10 * Time.deltaTime);
+                    //box.transform.position = Vector3.Lerp(box.transform.position, hit.transform.position, 1);
 
 
                     FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
