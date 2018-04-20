@@ -20,3 +20,4 @@ Hook menu up to finite state machine <br>
 Place text for different interactions into text boxes and hook up to finite state machine <br>
 Model each cell stage and hook into finite state machine <br>
 Implment individual organelle clicking <br>
+Completed project presentation <br>
