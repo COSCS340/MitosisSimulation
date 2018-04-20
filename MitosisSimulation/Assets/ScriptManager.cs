@@ -15,10 +15,16 @@ public class ScriptManager : MonoBehaviour {
 	public GameObject[] chromatids;
 	public GameObject envelope;
 	public GameObject[] chromosomes;
+	public GameObject[] chromos;
 	public GameObject[] chromopoints;
 	public GameObject[] daughterchromosomes;
+	public GameObject[] daughters;
 	public GameObject cell;
+	MovementScript c2script;
 
+	public void Start() {
+		c2script = centreole2.GetComponent<MovementScript>();
+	}
     public void Update()
     {
         //Checking to see if the user wants to exit to the main menu
@@ -53,54 +59,54 @@ public class ScriptManager : MonoBehaviour {
     }
 
 	void Step1() {
-		centreole2.transform.position = c2pos.transform.position;
-		foreach ( GameObject spindle in spindles1 ) {
-			spindle.SetActive(true);
-		}
-		nucleolus.SetActive(false);
-		foreach (GameObject chromatid in chromatids ) {
-			chromatid.SetActive(true);
-		}
+		c2script.beginMovement = true;
+		FadeOut fout = nucleolus.GetComponent<FadeOut>();
+		fout.fade = true;
+		//centreole2.transform.position = c2pos.transform.position;
+		//S1SwapSpindles();
 	}
 
 	void Step2() {
+		c2script.beginMovement2 = true;
 		foreach (GameObject chromatid in chromatids ) {
-			chromatid.SetActive(false);
+			FadeOut foutc = chromatid.GetComponent<FadeOut>();
+			foutc.fadeup = false;
+			foutc.fade = true;
 		}
+
 		foreach (GameObject spindle in spindles1 ) {
 			spindle.SetActive(false);
 		}
-		foreach (GameObject spindle in spindles2 ) {
-			spindle.SetActive(true);
-		}
-		foreach (GameObject chromo in chromosomes ) {
-			chromo.SetActive(true);
-		}
-		centreole2.transform.position = c3pos.transform.position;
-		envelope.SetActive(false);
+		//centreole2.transform.position = c3pos.transform.position;
 	}
 
 	void Step3() {
 		int i;
-		GameObject chromo;
-		GameObject point;
-		for ( i = 0; i < chromosomes.Length; i++ ) {
-			chromo = chromosomes[i];
-			point = chromopoints[i];
-			chromo.transform.position = point.transform.position; 
+		//GameObject chromo;
+		//GameObject point;
+		for ( i = 0; i < chromos.Length; i++ ) {
+			MovementScript cmove = chromos[i].GetComponent<MovementScript>();
+			cmove.cmove = true;
+
 		}
 
 	}
 
 	void Step4() {
-		foreach ( GameObject chromo in chromosomes ) {
-			chromo.SetActive(false);
+		foreach (GameObject chromo in chromosomes ) {
+			FadeOut foutc = chromo.GetComponent<FadeOut>();
+			foutc.fade = true;
+			foutc.fadeup = false;
 		}
 		foreach (GameObject spindle in spindles2 ) {
 			spindle.SetActive(false);
 		}
-		foreach (GameObject daughter in daughterchromosomes ) {
+		foreach (GameObject daughter in daughters ) {
 			daughter.SetActive(true);
+		}
+		foreach (GameObject daughter in daughterchromosomes ) {
+			FadeOut foutc = daughter.GetComponent<FadeOut>();
+			foutc.fade = true;
 		}
 		Vector3 newscale = cell.transform.localScale;
 		newscale.y = 12f;
@@ -147,4 +153,29 @@ public class ScriptManager : MonoBehaviour {
     { 
         Debug.Log("Total just called another function.");
     }
+
+	void S1SwapSpindles() {
+		foreach (GameObject chromatid in chromatids ) {
+			FadeOut foutc = chromatid.GetComponent<FadeOut>();
+			foutc.fade = true;
+		}
+		foreach ( GameObject spindle in spindles1 ) {
+			spindle.SetActive(true);
+		}
+
+		//nucleolus.SetActive(false);
+	
+	}
+
+	void S2SwapSpindles() {
+		foreach (GameObject spindle in spindles2 ) {
+			spindle.SetActive(true);
+		}
+		foreach (GameObject chromo in chromosomes ) {
+			FadeOut foutc = chromo.GetComponent<FadeOut>();
+			foutc.fade = true;
+		}
+		envelope.SetActive(false);
+
+	}
 }
