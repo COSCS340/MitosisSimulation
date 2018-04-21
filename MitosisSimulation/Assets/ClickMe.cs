@@ -21,9 +21,18 @@ public class ClickMe : MonoBehaviour {
                 //PrintName(hit.transform.gameObject);
                 if (i == hits.Length - 1) {
                     print(hit.transform.gameObject.tag);
-                    //#################################################################################
+
                     dialogue = new Dialogue();
-                    dialogue.name = "TEST";
+                    if (hit.transform.gameObject.tag == "Cell")
+                    {
+                        dialogue.name = "CELL";
+                    }
+                    else
+                    {
+                        dialogue.name = "TEST";
+                    }
+                    //#################################################################################
+                    
                     string[] line = new string[1];
                     line[0] = "This may work";
                     dialogue.sentences = line;
@@ -31,13 +40,13 @@ public class ClickMe : MonoBehaviour {
 
                     //box = GameObject.Find("TextPopUp"); //does not work for inactive objects
                     box.SetActive(true);
-                    canvas.transform.position = hit.transform.position;
-                    box.transform.position = hit.transform.position;
+                    //canvas.transform.position = hit.transform.position;
+                    //box.transform.position = hit.transform.position;
                     //box.transform.position = Vector3.MoveTowards(box.transform.position, hit.transform.position, 10 * Time.deltaTime);
                     //box.transform.position = Vector3.Lerp(box.transform.position, hit.transform.position, 1);
 
 
-                    FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                    FindObjectOfType<DialogueManager>().DisplayOneSentence(dialogue);
                     //#################################################################################
                 }
             }

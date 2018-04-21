@@ -10,6 +10,10 @@ public class DialogueManager : MonoBehaviour {
     public Text extra;
     public Text dialogueText;
 
+    //Text Box Pop Up
+    public Text boxE;
+    public Text boxText;
+
     public Animator animator;
 
     //private Queue<string> sentences;
@@ -24,6 +28,16 @@ public class DialogueManager : MonoBehaviour {
         backButton.SetActive(false);
         //sentences = new Queue<string>();
         sentences2 = new List<string>();
+    }
+
+    //########################################################
+    public void DisplayOneSentence(Dialogue dialogue)
+    {
+        boxE.text = dialogue.name;
+        foreach (string sentence in dialogue.sentences)
+        {
+            StartCoroutine(TypeSentence2(sentence, boxText));
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -101,6 +115,17 @@ public class DialogueManager : MonoBehaviour {
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            yield return null;
+        }
+    }
+
+    //Used to display a sentence char by char
+    IEnumerator TypeSentence2(string sentence, Text myText)
+    {
+        myText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            myText.text += letter;
             yield return null;
         }
     }
