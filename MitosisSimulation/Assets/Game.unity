@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -646,8 +646,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000022888, y: 219}
-  m_SizeDelta: {x: -196.6, y: -618.3}
+  m_AnchoredPosition: {x: 0.000022888, y: 218.035}
+  m_SizeDelta: {x: -196.6, y: -620.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103162992
 MonoBehaviour:
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 2
   fadeup: 0
 --- !u!1 &130092679 stripped
 GameObject:
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &132388034
 GameObject:
@@ -1027,7 +1027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 219}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &159431298
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 2
   fadeup: 0
 --- !u!1 &254837370 stripped
 GameObject:
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 2
   fadeup: 0
 --- !u!1 &258588210
 GameObject:
@@ -1757,7 +1757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &365367592
 GameObject:
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 2
   fadeup: 0
 --- !u!1 &431987820
 GameObject:
@@ -2013,7 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &462027134
 GameObject:
@@ -2314,7 +2314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &522577179
 GameObject:
@@ -2560,7 +2560,7 @@ Transform:
   - {fileID: 591687475}
   - {fileID: 558822830}
   - {fileID: 1907561187}
-  - {fileID: 691914809}
+  - {fileID: 2063104478}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2732,36 +2732,6 @@ Transform:
   m_Father: {fileID: 721096388}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &691914808
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1000506112}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 691914809}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &691914809
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1000506112}
-  m_GameObject: {fileID: 691914808}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2063104475}
-  - {fileID: 2063104478}
-  m_Father: {fileID: 612196540}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &699637538
 Prefab:
   m_ObjectHideFlags: 0
@@ -2869,7 +2839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 2
   fadeup: 0
 --- !u!1 &707295758
 GameObject:
@@ -3871,7 +3841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &925773349
 GameObject:
@@ -4081,21 +4051,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ceaa7825846c56744ac6076893018e70, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &1001585272
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1000506112}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2063104478}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &1029294227
 Prefab:
   m_ObjectHideFlags: 0
@@ -4345,7 +4300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &1176121911
 GameObject:
@@ -4814,7 +4769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &1365500156
 GameObject:
@@ -5201,7 +5156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 2
   fadeup: 0
 --- !u!1 &1433747710 stripped
 GameObject:
@@ -5342,7 +5297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &1463915689
 GameObject:
@@ -6078,7 +6033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &1644556953 stripped
 GameObject:
@@ -6320,7 +6275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &1795458197
 GameObject:
@@ -7597,7 +7552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &2054263378 stripped
 GameObject:
@@ -7616,7 +7571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 0
-  speed: 1
+  speed: 0.2
   fadeup: 0
 --- !u!1 &2059912229
 GameObject:
@@ -7821,48 +7776,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063066341}
---- !u!1 &2063104474
+--- !u!1 &2063104474 stripped
 GameObject:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: ceaa7825846c56744ac6076893018e70, type: 3}
   m_PrefabInternal: {fileID: 1000506112}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2063104475}
-  - component: {fileID: 2063104479}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2063104475
+--- !u!4 &2063104478 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 1000506112}
-  m_GameObject: {fileID: 2063104474}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 691914809}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2063104478
-Transform:
-  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: ceaa7825846c56744ac6076893018e70, type: 3}
   m_PrefabInternal: {fileID: 1000506112}
-  m_GameObject: {fileID: 1001585272}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 691914809}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2063104479
 MonoBehaviour:
   m_ObjectHideFlags: 0

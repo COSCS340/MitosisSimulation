@@ -93,10 +93,8 @@ public class ScriptManager : MonoBehaviour {
 	}
 
 	void Step4() {
-		foreach (GameObject chromo in chromosomes ) {
-			FadeOut foutc = chromo.GetComponent<FadeOut>();
-			foutc.fade = true;
-			foutc.fadeup = false;
+		foreach (GameObject chromo in chromos ) {
+			chromo.SetActive(false);
 		}
 		foreach (GameObject spindle in spindles2 ) {
 			spindle.SetActive(false);
@@ -121,9 +119,15 @@ public class ScriptManager : MonoBehaviour {
 		envelope.SetActive(true);
 		foreach ( GameObject chromatid in chromatids ) {
 			chromatid.SetActive(true);
+			FadeOut foutc = chromatid.GetComponent<FadeOut>();
+			foutc.fadeup = true;
+			foutc.fade = true;
 		}
-		foreach (GameObject daughter in daughterchromosomes ) {
+		foreach (GameObject daughter in daughters ) {
 			daughter.SetActive(false);
+		}
+		foreach (GameObject spindle in spindles2) {
+			spindle.SetActive(false);
 		}
 		Vector3 centreole1pos = centreole1.transform.position;
 		centreole1pos.y += 5.5f;

@@ -26,7 +26,7 @@ public class FadeOut : MonoBehaviour {
 					mat.color = color;
 				} else {
 					fade = false;
-					gameObject.SetActive(false);
+					//gameObject.SetActive(false);
 				}
 			} else {
 				if ( mat.color.a < 150 ) {
