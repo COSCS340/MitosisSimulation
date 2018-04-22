@@ -23,31 +23,35 @@ public class ClickMe : MonoBehaviour {
                     print(hit.transform.gameObject.tag);
 
                     dialogue = new Dialogue();
-                    if (hit.transform.gameObject.tag == "Cell")
-                    {
-                        dialogue.name = "CELL";
-                    }
-                    else
-                    {
-                        dialogue.name = "TEST";
-                    }
-                    //#################################################################################
-                    
                     string[] line = new string[1];
-                    line[0] = "This may work";
+
+                    switch (hit.transform.gameObject.tag)
+                    {
+                        case "Cell":
+                            dialogue.name = "CELL";
+                            line[0] = "This may work";
+                            break;
+                        case "Nucleolus":
+                            dialogue.name = "CELL";
+                            line[0] = "This may work";
+                            break;
+                        case "Chromosomes":
+                            dialogue.name = "CELL";
+                            line[0] = "This may work";
+                            break;
+                        case "Miotic Spindle":
+                            dialogue.name = "CELL";
+                            line[0] = "This may work";
+                            break;
+                        default:
+                            dialogue.name = "TEST";
+                            line[0] = "This may work";
+                            break;
+                    }
+
                     dialogue.sentences = line;
-
-
-                    //box = GameObject.Find("TextPopUp"); //does not work for inactive objects
                     box.SetActive(true);
-                    //canvas.transform.position = hit.transform.position;
-                    //box.transform.position = hit.transform.position;
-                    //box.transform.position = Vector3.MoveTowards(box.transform.position, hit.transform.position, 10 * Time.deltaTime);
-                    //box.transform.position = Vector3.Lerp(box.transform.position, hit.transform.position, 1);
-
-
                     FindObjectOfType<DialogueManager>().DisplayOneSentence(dialogue);
-                    //#################################################################################
                 }
             }
                 /*RaycastHit hit;
