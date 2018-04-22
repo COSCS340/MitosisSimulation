@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Centrosome
   - Cell
+  - Nucleus
+  - Nucleolus
+  - Chromosomes
+  - Chromatid
   layers:
   - Default
   - TransparentFX
