@@ -22,27 +22,32 @@ After completing our minimum viable project, we turned our attention on enhancin
 Our team roles have not changed that much throughout the entire project. Ethan oversaw the creation of a finite state machine and menu, and implementation of the detailed text boxes. Rachel created the text for the game interactions and cell stages, was responsible for all team reports and presentations. Forrest was in charge of the creation of organelles and animation of cell stages. Each of our team members were involved extensively in the last two weeks regarding debugging the program and each member presented equally during the in-class demo. All our members contributed a fair and equal amount to the project. The roles of our team members were static throughout the project.
 
 ## Project Management
-Our team did complete all of our goals for this project. Below is a breakdown of our sprints:
-Sprint #1
-•	Create a finite state machine
-•	Model organelles
-•	Create text for describing cell process
-Sprint #2
-•	Model different mitosis stages
-•	Create main menu
-•	Implement text boxes
-Sprint #3
-•	Implement interactive clicking of organelles
-•	Start animations
-Final Sprint
-•	Fix text box bug
-•	Finish final animations
-•	Create project presentation and final report
+Our team did complete all of our goals for this project. Below is a breakdown of our sprints: <br>
+**Sprint #1**
+- Create a finite state machine
+- Model organelles
+- Create text for describing cell process <br>
+
+**Sprint #2**
+- Model different mitosis stages
+- Create main menu
+- Implement text boxes <br>
+
+**Sprint #3**
+-	Implement interactive clicking of organelles
+-	Start animations <br>
+
+**Final Sprint**
+-	Fix text box bug
+-	Finish final animations
+-	Create project presentation and final report
+
 However, after completing all of our team’s goals, we uncovered several tasks that need to be accomplished for our project to be feasibly used in the academic world. These tasks are:
-•	Add music to the simulation
-•	Implement more biology scenarios
-•	Add a “text-to-talk” option for interactions
-•	Improve the graphics
+
+-	Add music to the simulation
+-	Implement more biology scenarios
+-	Add a “text-to-talk” option for interactions
+-	Improve the graphics
 
 ## Reflection
 For this iteration of the project, many things went well. Our team worked well together, all our tasks were completed, we were able to efficiently debug our program before our demo. Unfortunately, we encountered one obstacle during our demo: the screen size of the projector screen is not a standard screen size, and thus was not a selectable option on our Options Menu. During the presentation, the demo went off screen as the program tried to unsuccessfully fit itself to the odd screen size. In the future, we would want to add in a way for the program to automatically determine the screen size it was on without user input and size itself accordingly. Besides this small setback, we consider our project a success because we met all our milestones in a timely manner, worked well as a team, ad delivered the finished product in a timely manner.
